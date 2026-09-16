@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JustePrix DZ permet de comparer les prix de réparation observés en Algérie.">
+  <meta property="og:title" content="JustePrix DZ — Prix des réparations en Algérie">
+  <meta property="og:description" content="Combien ça devrait vraiment coûter ? Comparez les prix de réparation observés.">
+  <meta property="og:type" content="website">
+  <title>JustePrix DZ — Prix des réparations en Algérie</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="JustePrix DZ, accueil"><span class="brand-mark">JP</span><span>JustePrix <b>DZ</b></span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Ouvrir le menu</span></button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <a href="#categories">Catégories</a>
+        <a href="how-it-works.html">Comment ça marche ?</a>
+        <a href="about.html">À propos</a>
+        <a href="admin.html">Admin démo</a>
+        <button class="theme-toggle" type="button" aria-label="Activer le mode sombre"><span aria-hidden="true">☾</span><span class="theme-label">Sombre</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Prix de réparation en Algérie</p>
+        <h1>Combien devrait coûter votre réparation&nbsp;?</h1>
+        <p class="hero-copy">Découvrez les prix observés chez plusieurs réparateurs et évitez de payer trop cher.</p>
+        <form class="hero-search search-form" data-search-form>
+          <label class="sr-only" for="main-search">Rechercher une réparation</label>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="main-search" name="q" type="search" autocomplete="off" placeholder="Ex : écran iPhone 13, batterie Samsung S23, réparation PC...">
+          <button class="btn btn-primary" type="submit">Rechercher</button>
+        </form>
+        <div class="search-examples"><span>Exemples :</span><button type="button" data-example="Écran iPhone 13">Écran iPhone 13</button><button type="button" data-example="Batterie Samsung S22">Batterie Samsung S22</button><button type="button" data-example="Nettoyage PC">Nettoyage PC</button><button type="button" data-example="Installation Windows">Installation Windows</button></div>
+        <div class="trust-points"><span>✓ Prix observés</span><span>✓ Fraîcheur visible</span><span>✓ Sans engagement</span></div>
+      </div>
+    </section>
+
+    <section class="demo-banner" aria-label="Avertissement données de démonstration"><div class="container"><strong>⚠️ Données de démonstration</strong><span>Les prix affichés sont fictifs et servent uniquement à présenter le fonctionnement du prototype.</span></div></section>
+
+    <section id="categories" class="section">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Explorer par besoin</p><h2>Les réparations les plus recherchées</h2><p>Choisissez une catégorie pour consulter les estimations disponibles.</p></div>
+        <div id="category-grid" class="category-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading split-heading"><div><p class="eyebrow">Simple et transparent</p><h2>Un prix plus clair, avant d'appeler.</h2></div><a class="text-link" href="how-it-works.html">Comment ça marche ? <span>→</span></a></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">1</span><h3>Nous collectons</h3><p>Les prix sont relevés auprès de réparateurs et de sources locales.</p></article>
+          <article class="step-card"><span class="step-number">2</span><h3>Nous comparons</h3><p>Les fourchettes et les prix moyens rendent les écarts visibles.</p></article>
+          <article class="step-card"><span class="step-number">3</span><h3>Vous décidez</h3><p>Comparez sereinement, sans que nous choisissions à votre place.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-card"><div><p class="eyebrow">Votre réparation manque ?</p><h2>Aidez-nous à enrichir la base.</h2><p>Indiquez-nous simplement ce que vous recherchez ; votre demande est enregistrée sur cet appareil.</p></div><button class="btn btn-primary" type="button" data-open-suggestion>Suggérer une réparation</button></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-wrap"><a class="brand" href="index.html"><span class="brand-mark">JP</span><span>JustePrix <b>DZ</b></span></a><p>Comparer les prix de réparation, simplement.</p><div><a href="about.html">À propos</a><a href="admin.html">Admin démo</a></div></div></footer>
+  <div id="modal-root"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/data.js"></script><script src="js/utils.js"></script><script src="js/ui.js"></script><script src="js/app.js"></script>
+</body>
+</html>
